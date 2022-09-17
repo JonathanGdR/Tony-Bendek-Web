@@ -1,0 +1,194 @@
+/*general*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+ background: url(../img/back4.png);
+ background-size: cover;
+}
+
+main {
+  margin-left: 19.5%;
+}
+
+footer {
+  margin-left: 0%;
+}
+
+
+/*header and menu*/
+nav{
+height: 80px;
+padding-top: 0.7%;
+position: fixed;
+z-index: 10;
+background: url(../img/header.png);
+opacity: 0.90;
+}
+
+
+.logo{
+width: 200px;
+}
+
+
+#headerc{
+  background-color: #423F3F; 
+}
+
+
+/*body*/
+
+/*Firs section*/
+.firstSection {
+  position: relative; 
+  height: 35vh;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 4% 10% 4% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstSection::before {    
+    content: "";
+    background-image: url('../img/red-gym.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.firstSection {
+position: relative;
+color: #ffffff;  
+font-size: 1rem;
+line-height: 2;
+text-align: center;
+}
+
+.LineD{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  
+}
+
+/*carousel*/
+
+.carousel{
+ min-height: 500px;  
+ margin-top: 7%;
+}
+
+.carousel .carousel-item{
+  width: 370px;
+  height: 370px;
+}
+
+.carousel .carousel-item img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*place*/
+
+.placeSection{
+  color: white;
+  
+}
+
+.placeSection h3{
+  margin-top: 4%;
+}
+
+
+
+.lineL{
+  height: 2px;
+ background-color: red;
+ width: 20%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 3%;
+ margin-top: -1%;
+}
+
+
+.placeIMG{
+ height: 45vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid #1E1E1E;
+ border-radius: 5px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 3%;
+}
+
+.descL{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/*place/services*/
+.InnerPlace{
+ margin-top: 18%;
+ margin-bottom: 70%;
+}
+
+.InnerPlace img{
+  width: 40vh;
+  filter: grayscale(15%);
+}
+
+.lineL2{
+  height: 2px;
+ background-color: red;
+ width: 20%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 4%;
+ margin-top: 1%;
+}
+
+
+/*footer*/
+
+
+.footer-copyright{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background-color: black;
+}
+
+.footermain{
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+
+.footermain img{
+  width: 40px;
+  height: 40px;
+  margin-top: 2%;
+}
