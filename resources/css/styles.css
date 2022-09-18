@@ -12,6 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
  background: url(../img/back4.png);
  background-size: cover;
+ 
 }
 
 main {
@@ -152,14 +153,91 @@ text-align: center;
 
 /*place/services*/
 .InnerPlace{
- margin-top: 18%;
- margin-bottom: 70%;
+ position: relative; 
+ height: 90vh;
+ width: 100%;
+ margin-top: 4%;
+ margin-bottom: 4%;
+ padding: 4% 6% 4% 6%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 1;
+ background-color: #1E1E1E;
 }
+
+
+.InnerPlace::before{
+  content: "";
+  background-image: url('../img/b2.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  filter: grayscale(90%);
+  z-index: -1;
+ 
+
+}
+
+
+.lineL2{
+  height: 2px;
+ background-color: royalblue;
+ width: 20%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 2%;
+ margin-top: -1%;
+}
+
+
+.lineL3{
+  height: 2px;
+ background-color: black;
+ width: 20%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 3%;
+ margin-top: -1%;
+}
+
+
 
 .InnerPlace img{
   width: 40vh;
-  filter: grayscale(15%);
+  padding: -2%;
+  border-radius: 0%;
+  filter: grayscale(75%);
+  opacity: 0.8;
+  border-bottom: 1px  solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 15px solid #000000;
+  border-top: 8px solid #000000;
+  border-bottom-left-radius: 8px;
+  
+
 }
+
+.DescNosotros{
+margin-bottom:2%;
+}
+
+
+.placeSection2{
+  margin-top: -3%;
+  color: white;
+}
+
+.InnerPlace h5, h3{
+  color: white;
+}
+
+
 
 .lineL2{
   height: 2px;
@@ -178,7 +256,7 @@ text-align: center;
 .footer-copyright{
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  background-color: black;
+ 
 }
 
 .footermain{
@@ -191,4 +269,38 @@ text-align: center;
   width: 40px;
   height: 40px;
   margin-top: 2%;
+}
+
+
+@media (max-width: 600px){
+  .InnerPlace{
+    position: relative; 
+    height: 195vh;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 9%;
+    padding: 4% 10% 4% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   }
+
+
+   .InnerPlace::before{
+    content: "";
+    background-image: url('../img/b2.jpg');
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    filter: grayscale(45%);
+    z-index: -1;
+    margin-left: 0%;
+  
+  }
+  
 }
